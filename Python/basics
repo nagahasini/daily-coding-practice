@@ -67,5 +67,25 @@ student.pop('age')
 #for iteration
 for key in student:
     print(key,student[key])
+    
+ ##loops##
+n=[1,2,3,4,5,6]
+for i in n:
+    if i==2:
+        print("secret num found")
+        continue
+    print(i)
+    
+    
+#infinite loop:
+i=0
+while True:
+    print(i)
+    if i==10:   #this stops infinite loop
+        break
+    i+=1
+    
+
+ 
 
 
