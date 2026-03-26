@@ -1,0 +1,71 @@
+################### LIST ###########################
+l_1=['mike','el','dustin']
+l_2=['hopper','akhi']
+
+# Adding to the list
+l_1.append('hasi')
+l_1.insert(0,'steve')
+l_2.extend(l_1)
+
+#Removing from the list
+l_2.remove('akhi')
+p=l_1.pop() #removes last and returns value
+
+#others
+l_1.reverse()
+l_1.sort()
+l_1.sort(reverse=True)
+s=sorted(l_1)
+nums=[1,2,5,3]
+min(nums)
+sum(nums)
+
+#to make string from list
+s= ' '.join(l_1)
+print(s)
+
+##############################TUPLE################## ->its immutable
+t_1= ('math','science','social')
+
+############################## SET ###################
+
+#remove duplicates, order doesnt matter
+mpc= {'math','physics','chemistry'}
+bipc= {'biology','physics','chemistry'}
+
+
+print(mpc.intersection(bipc))
+print(mpc.union(bipc))
+print(mpc.difference(bipc))
+
+#-> to initialise empty set use a = set()
+
+names = ['Alice', 'Bob', 'Charlie', 'Alice', 'Eve', 'Bob']
+s=set()
+d=set()
+for i in names:
+    if i in s:
+        d.add(i)
+    else:
+        s.add(i)
+print("dupes are", d)
+
+############################## DICTIONARY ###################
+student={'name':'hasi','age':20,'courses':['a','b','c']}
+
+print(student.keys)
+print(student.values)
+print(student['name'])
+print(student.get('age')) #returns none if value NA
+
+student['phone']= '798917'
+student.update({'name':'naga hasini'})
+
+student.pop('age')
+# del student['age']
+
+#for iteration
+for key in student:
+    print(key,student[key])
+
+
